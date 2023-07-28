@@ -4,42 +4,6 @@ import styles from './Demo.module.css';
 import winnie from'./image/winnie.jpg';
 import MickeyMouse from'./image/MickeyMouse.jpg'
 import cinderella from './image/cinderella.jfif'
-class App1 extends Component{
-  constructor(){
-    super();
-    this.state={
-      data:
-      [
-        {
-          "name" :"KANISHKA:Buddu"
-        },
-        {
-          "name":"KAVYA:Kavzz"
-        },
-        { 
-          "name":"MANUSHRI:Manuss"
-        },
-
-        {
-          "name":"HARINI:Viniger"
-        },
-        {
-          "name":"Kalai:Banana"
-        }
-      ]
-    }
-  }
-  render(){
-    return(
-      <div>
-        <Fruit/>
-        <ul>
-          {this.state.data.map((item)=><List data ={item}/>)}
-        </ul>
-      </div>
-    );
-  }
-}
 class Fruit extends React.Component{
   render(){
     const left={
